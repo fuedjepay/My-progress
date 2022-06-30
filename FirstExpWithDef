@@ -1,0 +1,12 @@
+def Compare():
+
+    t1 = int(input("Введите первое число: "))
+    t2 = int(input("Введите второе число: "))
+
+    if t1 > t2:
+        print("Число",t1  ,"больше чем", t2, )
+    elif t2 > t1:
+        print("Число", t2 ,"больше чем", t1, )
+
+while True:
+    Compare()
