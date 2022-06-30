@@ -1,0 +1,19 @@
+#User is trying to guess the number which programm had determined by random
+
+import random
+realNum = random.randint(0,100) 
+guess = 0
+while guess != realNum:
+    guess = int(input("Попробуйте угадать число: "))
+
+    if guess == realNum:
+        print("Поздравляю! Вы угадали, загаданое число: ", realNum)
+        break
+
+
+    if(guess != realNum):
+
+        if guess > realNum:
+            print("Введенное число слишком большое! ")
+        elif guess < realNum: 
+            print("Введенное число слишком маленькое! ")
