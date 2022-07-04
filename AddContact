@@ -1,0 +1,25 @@
+isWorking = str(input("Do you want to add contact? Yes/No: "))
+
+def ContactList(name, number):
+      print("Contact Name: ", name, "Contact Number", number)
+
+if(isWorking == "Yes"):
+    def AddContact():
+        name = str(input("Write Contact Name: "))
+        number = str(input("Write Contact Number: "))
+
+ 
+
+        ContactList(name, number)
+
+        contin = str(input("Do you want to add one more contact? Yes/No: "))
+
+        if(contin == "Yes" or "yes"):
+            AddContact()
+            
+        else:
+            print("Програма завершает работу. ")
+
+    AddContact()
+else:
+   print("Программа завершает работу.")
